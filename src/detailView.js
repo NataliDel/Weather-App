@@ -37,7 +37,7 @@ function renderDetailView(weatherData, cityId) {
     rootElement.classList.add("show-background");
   }
 
-  const isFavorite = getFavoriteCities().find((city) => city === cityName);
+  const isFavorite = getFavoriteCities().find((city) => city === cityId);
 
   rootElement.innerHTML =
     getActionBarHtml(!isFavorite) +
